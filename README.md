@@ -82,7 +82,7 @@ If you want to add a German translation for **Realight Reimagined**:
 ## Acknowledgments
 
 Thank you for helping make these Add-Ons more accessible!  
-Your contributions will help players around the world enjoy Minecraft in their native languages.
+Your contributions will help players around the world enjoy our Add-Ons in their native languages.
 
 ---
 
