@@ -61,8 +61,8 @@ However, edits to the `en_US.lang` and `en_GB.lang` files are not allowed, as th
 If you want to add a German translation for **Realight Reimagined**:
 
 1. Navigate to the `Realight Reimagined` folder.
-2. Create a file named `de_DE.lang`.
-3. Add translations following the format.
+2. Open the file named `de_DE.lang`.
+3. Add/Edit translations following the format.
 
 ---
 
@@ -86,7 +86,7 @@ Your contributions will help players around the world enjoy Minecraft in their n
 
 ---
 
-## Available Languages
+## Available Minecraft Bedrock Languages
 
 | Code    | Language (English)            | Language (Native)              |
 |---------|-------------------------------|---------------------------------|
