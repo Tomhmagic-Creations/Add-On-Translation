@@ -1,0 +1,31 @@
+name: Protect Language Files
+
+on:
+  pull_request:
+
+jobs:
+  restrict-new-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Check for new files
+        run: |
+          NEW_FILES=$(git diff --diff-filter=A --name-only origin/main)
+          if [ -n "$NEW_FILES" ]; then
+            echo "The following new files were detected:"
+            echo "$NEW_FILES"
+            echo "Adding new language files is not allowed. You may only edit existing files."
+            exit 1
+          fi
+
+      - name: Check for protected files
+        run: |
+          PROTECTED_FILES=$(git diff --name-only -- '*.en_US.lang' '*.en_GB.lang')
+          if [ -n "$PROTECTED_FILES" ]; then
+            echo "The following protected files were modified:"
+            echo "$PROTECTED_FILES"
+            echo "Modifying 'en_US.lang' and 'en_GB.lang' files is not allowed."
+            exit 1
+          fi

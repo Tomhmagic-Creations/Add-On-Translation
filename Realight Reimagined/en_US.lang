@@ -1,0 +1,97 @@
+pack.name=Realight Reimagined Resources
+pack.description=Resources required for Realight Reimagined
+
+## Custom Items
+item.tomhmagic_realight:torch_light_normal=Torch Light
+item.tomhmagic_realight:torch_light_soul=Soul Torch Light
+item.tomhmagic_realight:torch_light_redstone=Redstone Torch Light
+item.tomhmagic_realight:miners_helmet=Miners Helmet
+item.tomhmagic_realight:miners_helmet_soul=Soul Miners Helmet
+item.tomhmagic_realight:info_book=§cRealight §eReimagined§r §fGuide Book§r
+item.tomhmagic_realight:torch_light_normal_oh=Offhand Torch
+item.tomhmagic_realight:torch_light_soul_oh=Offhand Soul Torch
+item.tomhmagic_realight:torch_light_redstone_oh=Offhand Redstone Torch
+item.tomhmagic_realight:lantern_oh=Offhand Lantern
+item.tomhmagic_realight:soul_lantern_oh=Offhand Soul Lantern
+
+## Custom Item Descriptions
+item.tomhmagic_realight:info_book.description=Guidebook for the Realight Reimagined addon.
+item.tomhmagic_realight:miners_helmet.description=Helmet made from a leather helmet and a lantern to provide light without the need to hold an item.
+item.tomhmagic_realight:miners_helmet_soul.description=Helmet made from a leather helmet and a soul lantern to provide light without the need to hold an item.
+item.tomhmagic_realight:torch_light_normal.description=Custom torch that can be used under water and held in the offhand, made with a torch and glass.
+item.tomhmagic_realight:torch_light_soul.description=Custom soul torch that can be used under water and held in the offhand, made with a soul torch and glass.
+item.tomhmagic_realight:torch_light_redstone.description=Custom redstone torch that can be used under water and held in the offhand, made with a redstone torch and glass.
+item.tomhmagic_realight:torch_light_normal_oh.description=Same as the vanilla torch but can be held in the offhand. Recipie can be reversed, when placed and broken it will revert back to the vanilla item.
+item.tomhmagic_realight:torch_light_soul_oh.description=Same as the vanilla soul torch but can be held in the offhand. Recipie can be reversed, when placed and broken it will revert back to the vanilla item.
+item.tomhmagic_realight:torch_light_redstone_oh.description=Same as the vanilla redstone torch but can be held in the offhand. Recipie can be reversed, when placed and broken it will revert back to the vanilla item.
+item.tomhmagic_realight:lantern_oh.description=Same as the vanilla lantern but can be held in the offhand. Recipie can be reversed, when placed and broken it will revert back to the vanilla item.
+item.tomhmagic_realight:soul_lantern_oh.description=Same as the vanilla soul lantern but can be held in the offhand. Recipie can be reversed, when placed and broken it will revert back to the vanilla item.
+## Messages
+tomhmagic_realight.notCreative=§cYou need to be in Creative to perform this action!§r
+tomhmagic_realight.form.clearLights.success=§aCleared any Light Blocks§r
+tomhmagic_realight.form.clearLights.fail=§cFailed Cleared Light Blocks§r
+tomhmagic_realight.newUpdate=There has been an update, use the Guidebook and check changelogs to read more!
+
+## --- Forms --- ##
+## Headers
+tomhmagic_realight.form.header.item=§l§dItem§r
+tomhmagic_realight.form.header.description=§l§bDescription§r
+tomhmagic_realight.form.header.recipe=§l§aRecipe§r
+tomhmagic_realight.form.header.recipeKey=§l§eKey§r
+tomhmagic_realight.form.header.recipePattern=§l§6Pattern§r
+
+tomhmagic_realight.form.back=Back
+tomhmagic_realight.form.changeLog.title=Changelog
+
+## Guidebook
+tomhmagic_realight.form.guideBookMain.title=Realight Reimagined Guide Book
+tomhmagic_realight.form.guideBookMain.body.1=Thank you for downloading §cRealight §eReimagined§r by §bTomhmagic Creations§r
+tomhmagic_realight.form.guideBookMain.body.2=This addon brings light into the world by providing light when holding or wearing items.
+tomhmagic_realight.form.guideBookMain.body.3=This guidebook will show information on what items give light and custom items. You can always craft it with dirt if you lose it.
+
+
+## Item List
+tomhmagic_realight.form.itemList.title=Light Item List
+tomhmagic_realight.form.itemList.body.line1=All items that give dynamic light and their properties.
+tomhmagic_realight.form.itemList.body.header=All information on items used for light, their light levels, what slot you can use them in and if you can use them in Air or Water.
+tomhmagic_realight.form.itemList.body.header.lightlevel=§l§eLight Level§r
+tomhmagic_realight.form.itemList.body.header.equipmentSlots=§l§bEquipment Slots§r
+tomhmagic_realight.form.itemList.body.header.allowedBlocks=§l§aAllowed Blocks§r
+
+## Custom Items/Recipies
+tomhmagic_realight.form.recipe.title=Our Recipes
+tomhmagic_realight.form.customItems.title=Custom Items
+tomhmagic_realight.form.customItems.body.line1=Information on the custom items we have added.
+
+## Clear Lights
+tomhmagic_realight.form.clearLights.title=Clear Lights
+tomhmagic_realight.form.clearLights.body.1=We place light blocks to create the dynamic light. We save each block we place into a list to clear. This means we won't break the lights you place in your map.
+tomhmagic_realight.form.clearLights.body.2=To save performance we save that list to a cache memory, and if you do /reload while we have light placed, the system will clear the list.
+tomhmagic_realight.form.clearLights.body.3=If this happens, you can easily give yourself a light block in creative and break it. However we have created this button for you to clear a 3x3 area of light blocks. You must be in creative to use it.
+tomhmagic_realight.form.clearLights.button=Clear Lights in a 3x3 area
+
+## --- Forms --- ##
+
+
+## --- FAQ --- ##
+tomhmagic_realight.form.faq.title=FAQs
+tomhmagic_realight.faq.question=§aQuestion§r
+tomhmagic_realight.faq.answer=§cAnswer§r
+
+tomhmagic_realight.faq.question.1=How does the light work?
+tomhmagic_realight.faq.answer.1=We check your equipment slots for any items that we have set to emit light. We then place a light block at the value of the highest light item available.
+
+tomhmagic_realight.faq.question.2=Will this break my world/break the light blocks I have placed?
+tomhmagic_realight.faq.answer.2=No, we check if it's safe to place a light block, which means there needs to be air or water (depending on the item). We then keep track of where we placed the light block to clean it up when you move.
+
+tomhmagic_realight.faq.question.3=What are the limitations?
+tomhmagic_realight.faq.answer.3=The ideal location to place a light block is in your head, but we also check above and below. If none of those 3 blocks are available, we will not place a light block. This is to protect your world from destroying blocks like tall grass or vines etc.
+
+tomhmagic_realight.faq.question.4=What happens if a light block isn't removed?
+tomhmagic_realight.faq.answer.4=In a very rare case that a light block isn't removed. In creative you can either give yourself a light block and break it or use the “Clear Light Blocks” button in the guide menu.
+
+tomhmagic_realight.faq.question.5=Why do I have to be in creative to use the Clear Light Blocks feature?
+tomhmagic_realight.faq.answer.5=Ideally, we want to lock this behind being an OP, currently we cannot check for this, so until then we have locked it behind creative. This is because it can clear light blocks you have placed.
+
+tomhmagic_realight.faq.question.6=Can I give feedback/make suggestions? 
+tomhmagic_realight.faq.answer.6=Yes! We always welcome feedback, please join us in our discord - discord.gg/CFZREHhsjm

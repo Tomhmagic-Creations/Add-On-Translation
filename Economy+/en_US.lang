@@ -1,0 +1,553 @@
+pack.name=Economy+ Resources
+pack.description=Resources required for Economy+
+
+item.thm_ecp:atm_card_black=ATM Card Black
+item.thm_ecp:atm_card_blue=ATM Card Blue
+item.thm_ecp:atm_card_brown=ATM Card Brown
+item.thm_ecp:atm_card_cyan=ATM Card Cyan
+item.thm_ecp:atm_card_green=ATM Card Green
+item.thm_ecp:atm_card_grey=ATM Card Gray
+item.thm_ecp:atm_card_light_blue=ATM Card Light Blue
+item.thm_ecp:atm_card_light_grey=ATM Card Light Gray
+item.thm_ecp:atm_card_lime=ATM Card Lime
+item.thm_ecp:atm_card_magenta=ATM Card Magenta
+item.thm_ecp:atm_card_orange=ATM Card Orange
+item.thm_ecp:atm_card_pink=ATM Card Pink
+item.thm_ecp:atm_card_purple=ATM Card Purple
+item.thm_ecp:atm_card_red=ATM Card Red
+item.thm_ecp:atm_card_white=ATM Card White
+item.thm_ecp:atm_card_yellow=ATM Card Yellow
+
+item.thm_ecp:wallet_black=Wallet Black
+item.thm_ecp:wallet_blue=Wallet Blue
+item.thm_ecp:wallet_brown=Wallet Brown
+item.thm_ecp:wallet_cyan=Wallet Cyan
+item.thm_ecp:wallet_green=Wallet Green
+item.thm_ecp:wallet_grey=Wallet Gray
+item.thm_ecp:wallet_light_blue=Wallet Light Blue
+item.thm_ecp:wallet_light_grey=Wallet Light Gray
+item.thm_ecp:wallet_lime=Wallet Lime
+item.thm_ecp:wallet_magenta=Wallet Magenta
+item.thm_ecp:wallet_orange=Wallet Orange
+item.thm_ecp:wallet_pink=Wallet Pink
+item.thm_ecp:wallet_purple=Wallet Purple
+item.thm_ecp:wallet_red=Wallet Red
+item.thm_ecp:wallet_white=Wallet White
+item.thm_ecp:wallet_yellow=Wallet Yellow
+
+
+item.thm_ecp:cash_single=1 Cash
+item.thm_ecp:cash_double=5 Cash
+item.thm_ecp:cash_halfclip=10 Cash
+item.thm_ecp:cash_clip=50 Cash
+item.thm_ecp:cash_stack=100 Cash
+item.thm_ecp:cash_twinstack=500 Cash
+item.thm_ecp:cash_doublestack=1,000 Cash
+item.thm_ecp:cash_pile=5,000 Cash
+item.thm_ecp:cash_case=10,000 Cash
+item.thm_ecp:cash_doublecase=50,000 Cash
+item.thm_ecp:cash_crate=100,000 Cash
+item.thm_ecp:cash_chest=500,000 Cash
+item.thm_ecp:cash_pallet=1,000,000 Cash
+
+item.thm_ecp:item_market=Spawn Market
+item.thm_ecp:phone=Phone
+item.thm_ecp:item_atm=Wall ATM
+item.thm_ecp:item_floor_atm=Floor ATM
+item.thm_ecp:item_auction=Spawn Auction
+
+item.thm_ecp:info_book=§6Economy§e+§f Guidebook§r
+
+
+tile.thm_ecp:wall_atm.name=Wall ATM
+tile.thm_ecp:floor_atm.name=Floor ATM Top
+tile.thm_ecp:floor_atm_bottom.name=Floor ATM Bottom
+tile.thm_ecp:safe.name=Safe Block
+tile.thm_ecp:vault_block.name=Vault Block
+tile.thm_ecp:piggy_bank.name=Piggy Bank
+
+item.spawn_egg.entity.thm_ecp:wandering_buyer.name=Wandering Buyer Spawn Egg
+
+##Entities
+entity.thm_ecp:wandering_buyer.name=Wandering Buyer
+
+##  ------------------------------------------------------ Messages ------------------------------------------------------ ##
+thm_ecp.msg.increase=%s §a+ §eYou recieved §b%s§e. New balance: §6%s§r
+thm_ecp.msg.increase.fromsender=%s §a+ §eYou recieved §b%s §efrom §d%s§e. New balance: §6%s§r
+thm_ecp.msg.decrease=%s §c- §b%s §ewas removed from your account. New balance: §6%s§r
+thm_ecp.msg.decrease.toreciever=%s §c- §eYou sent §b%s §eto §d%s§e. New balance: §6%s§r
+thm_ecp.msg.deposit=%s §a+ §eYou deposited §b%s §einto your account. New balance: §6%s§r
+thm_ecp.msg.withdraw=%s §c- §eYou withdrew §b%s §efrom your account. New balance: §6%s§r
+thm_ecp.msg.offlinemoney=%s §a+ §eYou recieved §b%s§e while you were offline. New balance: §6%s§r
+thm_ecp.msg.cashpayment=%s §c- §eYou paid §b%s §ein cash, change given: §6%s§r
+
+thm_ecp.newUpdate=There has been an update, use the Guidebook and check changelogs to read more!
+
+##Market
+thm_ecp.market.spawn=You are now the owner of this new Market. Click the market to add items to sell.
+
+##Auction
+thm_ecp.auction.out_bid=You have been outbid on %s at %s's Auction. Your money has been returned.
+thm_ecp.auction.returned_bid_removed=Your bid has been canceled on %s at %s's Auction due to the auction being removed. Your money has been returned.
+thm_ecp.auction.new_bid=You have successfully bid on this item, if someone outbids you, then your money will be returned.
+thm_ecp.auction.new_listing=You have added a new listing. Item: %s | Minimum Bid: %s
+thm_ecp.form.auction.collected=You have collected %s %s
+thm_ecp.auction.removed_listing=Listing has been removed, any active bids have been refunded and you have received the item back.
+
+##Errors
+thm_ecp.error.market.spawn=Unable to spawn Market! 3x3x3 around location must be air and not conatin other markets!
+thm_ecp.error.auction.place=Unable to place Auction! 3x3x3 around location must be air and not conatin other auctions!
+thm_ecp.form.auction.error.not_enough_fo_bid=You don't have enough to make the minimum bid!
+thm_ecp.form.error.potion=Potions are currently unsuported to be sold. Once the potion component is added to the Scripting API we will be able to support them.
+thm_ecp.form.error.blocked_item=This item is unsuported to be sold. This is due to it either having a potion component or dyable component. Once the these components are added to the Scripting API we will be able to support them.
+
+##Commands
+thm_ecp.command.update=All online players who had manual money changes has been updated.
+
+##Settings
+thm_ecp.settings.changed=Updated settings!
+thm_ecp.settings.noPerm=You need to be an admin to access this!
+thm_ecp.settings.scoreboard.notFound=The scoreboard %s was not found, please check the name and try again.
+thm_ecp.error.myScoreboard=§cUsing My Scoreboard is set to True but I cannot find the scoreboard §b%s§c. Please check the name in the settings.
+
+##Safe
+thm_ecp.safe.error.full=This safe is full, you have %s worth of cash in here.
+thm_ecp.safe.error.too_much=You can't add that much to the safe, it will overflow. You can add %s more.
+thm_ecp.safe.added=You have added %s worth of cash to the safe.
+thm_ecp.safe.removeCash.success=You have removed %s worth of cash from the safe. Items %s.
+thm_ecp.safe.addCash.success=You have added %s worth of %s cash to the safe.
+
+##Piggy Bank
+thm_ecp.piggy_bank.error.full=This piggy bank is full, you have %s worth of cash in here.
+thm_ecp.piggy_bank.error.too_much=You can't add that much to the piggy bank, it will overflow. You can add %s more.
+thm_ecp.piggy_bank.info.total=There is %s worth of cash in the piggy bank.
+thm_ecp.piggy_bank.addCash.success=You have added %s worth of %s cash to the piggy bank.
+
+##  ------------------------------------------------------ Forms ------------------------------------------------------ ##
+##Safe
+thm_ecp.form.safe.open.title=Open Safe
+thm_ecp.form.safe.open.title.large=Open Large Safe
+thm_ecp.form.safe.open_new.description.1=This is a safe the can carry %s worth of cash. You can add or remove cash from the safe here.
+thm_ecp.form.safe.open_new.description.2=You must set a 4 digit pin to open the safe, this is to prevent others from accessing your cash.
+thm_ecp.form.safe.open_new.description.3=Once a pin is set, you can only access the cash or remove the block once the pin is entered correctly.
+thm_ecp.form.button.safe.setPin=Set Pin
+thm_ecp.safe.error.noBlock=The block is missing, did it get removed? Please try again.
+thm_ecp.form.button.safe.removeCash=Remove Cash
+thm_ecp.form.safe.open.no_cash=There is no cash in the safe.
+
+thm_ecp.form.safe.open.description.1=§eSafe Total: §6%s§r
+thm_ecp.form.safe.open.description.2=Here you can remove cash from the safe, or set a new pin.
+thm_ecp.form.safe.open.description.3=To add more cash, interact with the safe with the cash item in your hand. Anyone can add cash to the safe, even when it's closed.
+thm_ecp.form.safe.open.description.4=To remove the safe click Remove Safe, this will break the block and return any cash inside.
+thm_ecp.form.safe.open.description.upgrade=To upgrade the safe, click Upgrade Safe with a safe block in your hand, this will upgrade the safe to a large, increasing the amount of cash it can hold.
+thm_ecp.form.safe.open.description.downgrade=To downgrade the safe, click Downgrade Safe, this will downgrade the safe to a normal safe, decreasing the amount of cash it can hold. You cannot downgrade if there is too much cash in the safe.
+thm_ecp.safe.setPin.error.invalid=The pin you entered was invalid, it must be for digits long and only contain numbers.
+thm_ecp.safe.error.upgrade.noItem=You need to hold a safe block in your hand to upgrade the safe.
+thm_ecp.form.safe.cash_items=§aCash Items:§r
+
+thm_ecp.safe.setPin.title=Set Pin
+thm_ecp.safe.inputPin.title=Input Pin
+thm_ecp.safe.pin.textField=Enter Pin
+thm_ecp.safe.pin.textField.placeholder=Enter 4 digit pin
+thm_ecp.safe.pin.error.0000=You can't set the pin to 0000, please choose a different pin.
+thm_ecp.safe.inputPin.error.incorrect=The pin you entered was incorrect, please try again.
+thm_ecp.safe.error.downgrade.toomuch=You have too much cash in the safe to downgrade, you need to remove at least %s to downgrade.
+thm_ecp.safe.error.upgrade.noSpace=The block above the safe is not air, you need to have a 2 block high space to upgrade the safe.
+thm_ecp.safe.error.removeCash.empty=You don't have any cash in the safe to remove!
+
+thm_ecp.safe.removeCash.title=Remove Cash
+thm_ecp.form.button.safe.closeSafe=Close Safe
+thm_ecp.form.button.safe.removeSafe=Remove Safe
+thm_ecp.form.button.safe.upgrade=Upgrade Safe
+thm_ecp.form.button.safe.downgrade=Downgrade Safe
+
+##Banking
+thm_ecp.form.banking.title=My Banking
+thm_ecp.form.banking.welcome=Welcome §b%s§r to the §6Economy§e+ §rBanking App!
+thm_ecp.form.banking.balance=§eMy Balance: §6%s§r
+
+##Send Money
+thm_ecp.form.send_money.title=My Banking
+thm_ecp.form.send_money.welcome=Here you can send money to another player.
+thm_ecp.form.send_money.how_to.1=How to send Money:
+thm_ecp.form.send_money.how_to.2=Choose from Online Players or your Friends List
+thm_ecp.form.send_money.how_to.3=Online Players - Will show a list of online players to send money too.
+thm_ecp.form.send_money.how_to.4=Friends List - Will show a list of your friends, you can send money to friends when they are either online or offline.
+
+##Online Players
+thm_ecp.form.online_players.title=Online Players
+thm_ecp.form.online_players.welcome=There are %s other Online Players.
+thm_ecp.form.online_players.how_to=If there are other online players you can select one here to send them money.
+
+##Transfer Money
+thm_ecp.form.transfer_money.title=Transfer Money to %s
+thm_ecp.form.transfer_money.amount=Amount to Transfer - §6Avaliable: §f%s§r
+thm_ecp.form.transfer_money.amount.placeholder=0
+
+##Manage Friends
+thm_ecp.form.manage_friends.title=Manage Friends
+thm_ecp.form.manage_friends.welcome.1=Here you can view and manage your friends.
+thm_ecp.form.manage_friends.welcome.2=Either click "Add Friend" to add a new friend from an online player, or select the name of a friend to either send them money or remove them from your friends list.
+thm_ecp.form.friend_form.body=Here you can manage your friend, either send them money or remove them as a friend.
+thm_ecp.form.friend_form.remove_friend=Are you sure you want to remove %s as a friend?
+thm_ecp.form.friend_form.remove_friend.success=You have removed %s as a friend.
+
+##Add Friend
+thm_ecp.form.add_friend.title=Add a Friend
+thm_ecp.form.add_friend.body=Here you can add players that are online as friends, so if you want to send them money you can do so even when they are offline.%s%s%sJust click the button of which player you want to add to add them.
+thm_ecp.form.newFriendName.confirm=Are you sure you want to add §b%s§r as a friend?
+thm_ecp.form.add_friend.added=You added %s as a friend!
+
+##Deposit
+thm_ecp.form.deposit.title=Deposit Cash
+thm_ecp.form.deposit.item=Deposit %s Cash Item
+thm_ecp.form.deposit.confirm=You are about to deposit §6%s§r into your account, are you sure?
+thm_ecp.form.deposit.zero_total=You didn't deposit anything into your account.
+thm_ecp.form.deposit.no_cash=You don't have any cash on you to deposit!
+thm_ecp.form.deposit.all=Deposit all: %s
+thm_ecp.form.deposit.select=Select cash to deposit
+
+##Withdraw
+thm_ecp.form.withdraw.title=Withdraw Cash
+thm_ecp.form.withdraw.amount=Amount to Withdraw - §6Avaliable: §f%s§r
+thm_ecp.form.withdraw.amount.placeholder=0
+thm_ecp.form.withdraw.confirm=You are about to withdraw §6%s§r from your account, are you sure?
+
+##Market
+thm_ecp.form.market.welcome=Welcome to %s
+thm_ecp.form.market.items=§bItems§r
+thm_ecp.form.market.no_items=This market currently has no items.
+thm_ecp.form.market.out_of_stock=This item is out of stock!
+thm_ecp.form.market.item1=Item 1
+thm_ecp.form.market.item2=Item 2
+thm_ecp.form.market.item3=Item 3
+thm_ecp.form.market.item=§aItem§r: %s
+thm_ecp.form.market.price=§ePrice§r: %s
+thm_ecp.form.market.sales=§dSales§r: %s
+thm_ecp.form.market.price_title=Price
+thm_ecp.form.market.stock=§6Quantity§r: %s
+thm_ecp.form.market.manage_market=Manage Market
+thm_ecp.form.market.owner=Click Manage Market to add/edit/remove items or remove the market.
+thm_ecp.form.market.item_select=Select crate texture
+
+##Market Item
+thm_ecp.form.market_item.welcome=Here you can choose how many items you want to buy.
+thm_ecp.form.market_item.no_money=You do not have enough money in the bank to buy this. §6Total:§r%s | §bBalance:§r%s
+thm_ecp.form.market_item.no_stock=There is not enough stock of this item to purchase your chosen amount. §eStock:§r%s | §aChosen Amount:§r%s
+thm_ecp.form.market_item.no_items=There currently isn't an item set if this slot. Click Add Item to add a new item.
+
+##Manage Market
+thm_ecp.form.manage_market.welcome=Here you can manage your market, from adding and removing items or stock, setting prices or remove the market.
+thm_ecp.form.manage_market.remove_confirm=Are you sure you want to remove the market? This will transfer any sales you haven't collected yet, and drop any stock left in the market.
+thm_ecp.form.manage_market.title=Manage Market
+thm_ecp.form.manage_item.title=Manage Item
+thm_ecp.form.manage_item.error=I coudldn't find an item in your main hand!
+thm_ecp.form.manage_item.confirm=Are you sure you want to add %s into item slot %s? If you are replacing an item you will get given any stock and sales withdrawn.
+thm_ecp.form.manage_item.select_value=Select Values
+thm_ecp.form.manage_item.no_value=You didn't select a value to add. Canceled adding item/stock to market.
+thm_ecp.form.manage_item.input_price=Input Price
+thm_ecp.form.manage_market.success=Added %s %s to the market at price %s
+thm_ecp.form.market_item.stock_return=Returned %s %s
+thm_ecp.form.market_item.stock_add=Added %s %s. New stock total:%s
+thm_ecp.form.manage_market.remove_item_confirm=Are you sure you want to remove %s from the market? Any stock will be returned and sales will be withdrawn.
+thm_ecp.form.manage_market.removed_items=Removed %s from the market
+thm_ecp.form.manage_item.update_stock=Update Stock
+thm_ecp.form.manage_item.update_price=Update Price
+thm_ecp.form.manage_item.update_basket=Update Crate
+thm_ecp.form.manage_item.edit_price=Edit Price
+thm_ecp.form.manage_item.basket_changed=Crate texture changed to %s
+thm_ecp.form.manage_item.choose_stock=Choose stock update value
+thm_ecp.form.manage_item.no_update=No value was changed to update stock. Stock remains the same.
+thm_ecp.form.manage_item.no_update_price=No value was changed to price. Price remains the same.
+thm_ecp.form.manage_item.set_price=Price now set to %s
+thm_ecp.form.manage_market.withdraw_sales=Are you sure you want to withdraw §6%s§r from the market?
+thm_ecp.form.manage_market.withdraw_sales.empty=There have been no new sales to withdraw!
+thm_ecp.form.manage_market.market_colour=Change Market Colors
+thm_ecp.form.manage_market.colour1=Color 1
+thm_ecp.form.manage_market.colour2=Color 2
+thm_ecp.form.manage_market.colours_changed=Set market colors to %s and %s. 
+
+##Auction
+thm_ecp.form.auction.title=Auction
+thm_ecp.form.auction.welcome=Welcome to the Auction. Here you can list items up for auction and let others bid for them.
+thm_ecp.form.auction.howto.add=List an Item: Here you will choose an item from your inventory to list, you can place up to 1 stack of items per listing.
+thm_ecp.form.auction.howto.listings=Listings: Here you can view what current items are up for auction.
+thm_ecp.form.auction.howto.remove=Remove a Listing: Here you can remove one or all of your leastings
+thm_ecp.form.auction.howto.collect.item=Collect Item: If you have won an item, or your item ended without any bids, you can collect it here.
+thm_ecp.form.auction.howto.remove_auction=Remove Auction: Remove this auction entity.
+
+
+thm_ecp.form.auction.error.no_listings=There are no listings to show!
+thm_ecp.form.auction.error.no_collections=You have no items to collect from this auction!
+thm_ecp.form.auction.error.no_space=You auction is at capacity, you cannot add any more items right now!
+thm_ecp.form.auction.error.no_space_collections=Your collections storage is full, you only have room for your current listings. Once more items have been collected you can add more items!
+thm_ecp.form.auction.error.no_item=You don't have an item in your main hand to add to to the auction!
+thm_ecp.form.auction.error.remove_auction.collections=You cannot remove the auction while there are items to be collected!
+thm_ecp.form.auction.remove_listing=Are you sure you want to remove the listing? Any current bids will be returned. Total bids: %s | Current bid value: %s
+thm_ecp.form.auction.remove_auction=Are you sure you want to remove the auction? Any current bids will be returned.
+thm_ecp.form.auction.error.last_bidder=You are the last bidder, you can't bid again!
+
+##Listings
+thm_ecp.form.auction_listings.title=Listings
+thm_ecp.form.listings.welcome=Here are the current active listings, click on one to view more information on the listing.
+
+##Listings Info
+thm_ecp.form.listing_info.title=Listing
+thm_ecp.form.listing_info.welcome=You are currently viewing an active listing, here you can see the details on the listing and choose to bid.
+thm_ecp.form.listing_info=Item Information
+thm_ecp.form.listing_info.item_name=§aItem Name§r: %s
+thm_ecp.form.listing_info.quantity=§eQuantity§r: %s
+thm_ecp.form.listing_info.item_type=§dType§r: %s
+thm_ecp.form.listing_info.durability=Durability: %s
+thm_ecp.form.listing_info.enchants=Enchants:
+
+thm_ecp.form.listing_info.bid_info=Bid Information
+thm_ecp.form.listing_info.bid_increment=§6Minimum Bid Increment§r: %s
+thm_ecp.form.listing_info.current_bid=§cCurrent Bidder§r: %s %s
+thm_ecp.form.listing_info.total_bids=§bTotal Bids§r: %s
+thm_ecp.form.listing_info.time_left=§eTime Left§r:
+
+##Add Listing
+thm_ecp.form.add_listing.title=New Listing | %s x %s
+thm_ecp.form.add_listing.increment=Set bid increment
+thm_ecp.form.add_listing.increment.placeholder=0
+
+##Bid
+thm_ecp.form.bid.title=Bid for %s
+thm_ecp.form.bid.bid_increment=Minimum Bid: %s | Current Bid: %s
+thm_ecp.form.bid.bid_increment_placeholder=%s
+
+##Buttons
+thm_ecp.form.button.back=Back
+thm_ecp.form.button.yes=Yes
+thm_ecp.form.button.no=No
+thm_ecp.form.button.send_money=Send Money
+thm_ecp.form.button.friends=My Friends
+thm_ecp.form.button.manage_friends=Manage Friends
+thm_ecp.form.button.online_players=Online Players
+thm_ecp.form.button.deposit=Deposit Cash
+thm_ecp.form.button.withdraw=Withdraw Cash
+thm_ecp.form.button.try_again=Try Again?
+thm_ecp.form.button.go_back=Go Back
+thm_ecp.form.button.exit=Exit
+thm_ecp.form.button.add_friend=Add Friend
+thm_ecp.form.button.remove_friend=Remove Friend
+thm_ecp.form.button.edit_item=Edit item %s
+thm_ecp.form.button.buy_amount=Buy %s %sTotal: %s
+thm_ecp.form.button.buy_half=Buy Half (%s) %sTotal: %s
+thm_ecp.form.button.buy_all=Buy All (%s) %sTotal: %s
+thm_ecp.form.button.buy_custom=Buy a custom amount
+thm_ecp.form.button.edit_item_1=Edit Item 1
+thm_ecp.form.button.edit_item_2=Edit Item 2
+thm_ecp.form.button.edit_item_3=Edit Item 3
+thm_ecp.form.button.remove_market=Remove Market
+thm_ecp.form.button.replace_item=Replace Item
+thm_ecp.form.button.add_item=Add Item
+thm_ecp.form.button.remove_item=Remove Item
+thm_ecp.form.button.update_stock=Update Stock
+thm_ecp.form.button.update_price=Update Price
+thm_ecp.form.button.update_basket=Update Crate Texture
+thm_ecp.form.button.withdraw_market=Withdraw All Sales%sTotal: %s
+thm_ecp.form.button.withdraw_sales=Withdraw Sales: %s
+thm_ecp.form.button.listings=Listings | Active: %s
+thm_ecp.form.button.add_listing=List an Item
+thm_ecp.form.button.remove_listing=Remove a Listing
+thm_ecp.form.button.collect_item=Collect Item/s | %s Item/s to collect
+thm_ecp.form.button.collect_item.collections=My collections: %s
+thm_ecp.form.button.remove_auction=Remove Auction
+thm_ecp.form.button.bid_increment=Bid Increment
+thm_ecp.form.button.bid=Bid %s
+thm_ecp.form.button.market_colour=Market Colors
+thm_ecp.form.button.market_name=Manage Market Name
+thm_ecp.settings.button.set=Change Settings
+
+
+##Form Errors
+thm_ecp.form.error.title=§4Error!
+thm_ecp.form.error.whole_number=You can only input a whole number more than 0!
+thm_ecp.form.error.offline_player=The player you have selected is no longer online!
+thm_ecp.form.error.insufficient_funds=You do not have enough to send! Your current balance is %s
+thm_ecp.form.confirm.title=Are you sure?
+thm_ecp.form.error.whole_number.startingCash=You can only input a whole number for starting cash! Set to 0 to disable.
+
+
+##  ------------------------------------------------------ Text ------------------------------------------------------ ##
+thm_ecp.date_time.day=%s day,
+thm_ecp.date_time.days=%s days,
+thm_ecp.date_time.hour=%s hour,
+thm_ecp.date_time.hours=%s hours,
+thm_ecp.date_time.minute=%s minute,
+thm_ecp.date_time.minutes=%s minutes,
+thm_ecp.date_time.second=%s second
+thm_ecp.date_time.seconds=%s seconds
+
+##  ------------------------------------------------------ Jobs ------------------------------------------------------ ##
+thm_ecp.jobs.woodcutter=Woodcutter
+thm_ecp.jobs.woodcutter.description=Cut wood.
+
+##  ------------------------------------------------------ Guide ------------------------------------------------------ ##
+
+##Main form
+thm_ecp.form.guide.title=Economy+ Guide
+thm_ecp.form.guide.welcome.1=Welcome to the §6Economy§e+§r Guide.
+thm_ecp.form.guide.welcome.2=Here you will find all information needed for the Addon, from recipes, how to's and change logs.
+thm_ecp.form.guide.contents=Contents:
+thm_ecp.form.guide.how_tos=How To's - How to use the Addon.
+thm_ecp.form.guide.recipies=Recipes - Recipes for all the items.
+thm_ecp.form.guide.roadmap=Roadmap - Our planned features
+thm_ecp.form.guide.changelog=Change Log - Everytime the Addon is updated all the details of the changes will be listed here.
+thm_ecp.form.guide.social=If you have any questions, suggestions or would like to talk to us about the addon, please join us on discord:
+thm_ecp_form.guide.discord=https://discord.gg/tomhmagic
+
+thm_ecp.guide.button.how_tos=How To's
+thm_ecp.guide.button.recipies=Recipes
+thm_ecp.guide.button.faq=FAQ's
+thm_ecp.guide.button.changelog=Change Log
+thm_ecp.guide.button.roadmap=Roadmap
+thm_ecp.guide.button.settings=Settings
+thm_ecp.howtos.button.technical=Technical Info
+
+##How Tos
+thm_ecp.form.howtos.title=How To's
+thm_ecp.form.howtos.welcome=In this section you can learn about each part of the addon. A lot of the features come with their own quide when using the addon, however we have listed some of the infomation here. Click on a button to start to learn about that secion.
+
+##Bank
+thm_ecp.howtos.button.bank=Bank & Money
+thm_ecp.form.howtos.bank.info.1=You can use the banking app to do a range of things, you can open the banking app at ATMs with a ATM card, or with a phone (see recipies to craft).
+thm_ecp.form.howtos.bank.info.2=When opening with a phone, you'll only have access to send money and manage friends. But using an ATM will also allow you to deposit and withdaw cash.
+
+thm_ecp.form.howtos.bank.sendMoney=Send Money
+thm_ecp.form.howtos.bank.manageFriends=Manage Friends
+thm_ecp.form.howtos.bank.withdaw=Withdraw
+thm_ecp.form.howtos.bank.deposit=Deposit
+thm_ecp.form.howtos.bank.info.sendMoney=Use this option to send money to either online players or to your friends (even if they are offline).
+thm_ecp.form.howtos.bank.info.manageFriends=This is a place to add or remove friends from your friends list.
+thm_ecp.form.howtos.bank.info.withdaw=Withdraw money from an ATM in to cash items
+thm_ecp.form.howtos.bank.info.deposit=Deposit some or all of your cash items into your account
+
+##Cash or Card
+thm_ecp.form.cash_or_card.title=Cash or Card?
+thm_ecp.form.cash_or_card.welcome=Would you like to use cash, card or both to make this transaction?
+thm_ecp.form.cash_or_card.welcome.2=§7(Both uses cash first, then card if there isn't enough cash)§r
+thm_ecp.form.cash_or_card.button.cash=Cash
+thm_ecp.form.cash_or_card.button.card=Card
+thm_ecp.form.cash_or_card.button.both=Both
+thm_ecp.form.cash_or_card.bankBalance=§bBank Balance: §6%s§r
+thm_ecp.form.cash_or_card.cashBalance=§aCash Balance: §6%s§r
+thm_ecp.form.cash_or_card.total=Total: %s
+thm_ecp.form.cash_or_card.insufficient_funds=§cYou don't have enough to make this transaction!§r
+
+##Market
+thm_ecp.howtos.button.market=Market
+thm_ecp.form.howtos.market.info.1=You can use a market to sell up to 3 items, markets can hold as many of the same quantity of items you want to sell, they have to match to be added.
+thm_ecp.form.howtos.market.info.2=Markets can make money for you while you are offline if the world is open or on a realm.
+thm_ecp.form.howtos.market.info.3=Markets have to be placed in a 3x3x3 area with no air or other markets.
+
+thm_ecp.form.howtos.market.buyItem=Buy item/s
+thm_ecp.form.howtos.market.editItem=Edit Items:
+thm_ecp.form.howtos.market.addItem=Add Item - add an item into the market, setting price, quantity and crate texture
+thm_ecp.form.howtos.market.replaceItem=Replace Item - replace the current item in this slot
+thm_ecp.form.howtos.market.removeItem=Remove Item - remove the item (withdraws sales)
+thm_ecp.form.howtos.market.updateStock=Update Stock - add or remove stock
+thm_ecp.form.howtos.market.updatePrice=Update Price - change the price of the item
+thm_ecp.form.howtos.market.withdrawSales=Withdraw Sales - withdraw sales of that item into your bank
+thm_ecp.form.howtos.market.crateTexture=Update Crate Texture - change the texture of the crate for that item
+
+thm_ecp.form.howtos.market.info.buyItem=Hit a market to open it, you can click on an item that is for sale and choose to buy 1, half, custom amount or all. You need money in the bank to buy from a market.
+thm_ecp.form.howtos.market.info.manageItem.1=If you own the market you will get the manage market button, here you can edit items, withdraw any sales into your bank, change the colors of the market or remove the market. 
+thm_ecp.form.howtos.market.info.manageItem.2=When adding or replacing items, make sure to hold the item in your main hand that you want to add when you open the market.
+
+thm_ecp.form.market.name_type_1=Nametag always show
+thm_ecp.form.market.name_type_2=Nametag show when looking
+thm_ecp.form.market.name_type_3=Nametag hidden
+
+thm_ecp.form.market.name_type=Name Tag Visibility
+thm_ecp.form.manage_market.name_changed=§aMarket name changed to §r%s§a, visibility set to §b%s§a.§r
+thm_ecp.form.market.change_name=Market Name
+
+thm_ecp.form.button.rotate_market=Rotate Market
+thm_ecp.form.button.editMarketManagers=Edit Market Managers
+thm_ecp.form.market.rotate=Choose Rotation
+thm_ecp.form.manage_market.rotated=Market rotated to %s
+thm_ecp.form.button.editMarketManagers.save=Save Managers
+
+thm_ecp.form.market.edit_managers.title=Edit Market Managers
+thm_ecp.form.edit_managers.welcome=Here you can add or remove managers from the market. Managers can add new items (to empty slots), update stock and price of current items, and edit the markets name, colour and rotations settings.
+thm_ecp.form.manage_market.currentManagers=Current Managers:
+thm_ecp.form.manage_market.currentManagers.none=There are no current managers for this market.
+thm_ecp.form.manage_market.noFriends=You have no friends to add as managers.
+thm_ecp.form.manage_market.noFriends.hasManagers=Click Edit Market Managers to edit the managers of this market, you have no friends to add new managers.
+thm_ecp.form.manage_market.hasFriends=Click Edit Market Managers to add friends as managers.
+thm_ecp.form.manage_market.hasFriends.hasManagers=Click Edit Market Managers to add/remove friends as managers.
+
+
+##Auction
+thm_ecp.howtos.button.auction=Auction
+thm_ecp.form.howtos.auction.info.1=You can use an auction to sell up to 27 items at a time, each item can be up to 1 stack.
+thm_ecp.form.howtos.auction.info.2=Unlike the market, items are bid on by other players before they are sold. Items are sold if they have recieved at least 1 bid before the time is up (default 24 hours).
+thm_ecp.form.howtos.auction.info.3=When bidding on an item in an auction, it will take the money you bid, if you win, the item will be available to collect, when someone else bids, you will get the money back.
+thm_ecp.form.howtos.auction.info.4=Auctions are owned by each player, so different auctions may hold different items.
+thm_ecp.form.howtos.auction.listings=Here you can see all the active listings of an auction, if you own the auction, you can use this to check the listing or remove it.
+thm_ecp.form.howtos.auction.collections=If you have won an item, or it didn't sell in time, then you can collect all items waiting to be collected with the collections button, the button will display a total of all collections and how many are due to you.
+thm_ecp.form.howtos.auction.list=If you own the market you can list an item and choose it's minimum bid price
+thm_ecp.form.howtos.auction.remove=If you own the market you can remove the market only if there are no collections left to collect. Any active listings with bids will be refunded.
+
+##Recipies
+thm_ecp.recipies.button=Recipes
+thm_ecp.recipies.key=Key:
+thm_ecp.recipies.shape=Shape
+
+thm_ecp.form.recipies.info.1=These are the custom items and how to make them.
+thm_ecp.recipies.guideBook=To make this guidebook its a shapless recipie with 1 Paper, 1 Leather and 1 Gold Nugget
+thm_ecp.recipies.atm_card=ATM Cards are shapless and require: 1 Paper, 1 Leather, 1 Gold Nugget and 1 of any dyes (for color)
+thm_ecp.recipies.cash=Cash isn't craftable, however you can make bigger or smaller cash, for example 5 x 10 Cash Item = 50 Cash Item, and 50 Cash Item = 5 x 10 Cash Item
+
+##Change Log
+thm_ecp.form.changeLog.title=Change Log
+
+
+##Settings
+thm_ecp.form.settings.button=Save Settings
+thm_ecp.form.settings.title=Settings
+thm_ecp.form.settings.edit.title=Change Settings
+thm_ecp.form.settings.body.1=Here you can customise and toggle different features.
+thm_ecp.form.settings.body.2=most of these features are designed to work with vanilla survival, but if you are creating a world or realm and want to control how your players obtain money, you can toggle them here.
+thm_ecp.form.settings.body.3=To change the settings you need to have the tag (admin) - to do this run a command in chat /tag @s add admin (in the future when we get access to checking for OP this will override the admin check)
+thm_ecp.form.settings.body.4=Your current settings are:
+thm_ecp.form.settings.0=§dCurrency Name/Symbol§r
+thm_ecp.form.settings.1=§dPlace Currency in Front?§r
+thm_ecp.form.settings.2=§dMoney Scoreboard Name§r
+thm_ecp.form.settings.3=§dAuction Time (hours)§r
+thm_ecp.form.settings.4=§dSpawn Wandering Buyer§r
+thm_ecp.form.settings.5=§dMoney Score Sidebar§r
+thm_ecp.form.settings.6=§dMoney Score List§r
+thm_ecp.form.settings.7=§dMoney Score Above Head§r
+thm_ecp.form.settings.8=§dStarting Money§r
+thm_ecp.form.settings.9=§dTransfer from old§r
+thm_ecp.form.settings.10=§dOld scoreboad§r
+thm_ecp.form.settings.11=§dUse my scoreboard§r
+thm_ecp.form.settings.12=§dMy scoreboard name§r
+thm_ecp.form.settings.13=§dAllow Personal Auctions§r
+thm_ecp.form.settings.14=§dSmall Safe Max§r
+thm_ecp.form.settings.15=§dLarge Safe Max§r
+thm_ecp.form.settings.16=§dEcomony Type§r
+thm_ecp.form.settings.17=§dAllow Payment Choice§r
+
+thm_ecp.form.settings.0.info=§7The name or symbol of the currency.§r
+thm_ecp.form.settings.1.info=§7Place the name or symbol in front of the money (e.g. Cash 100 or 100 Cash).§r
+thm_ecp.form.settings.2.info=§7Name of the money scoreboard.§r
+thm_ecp.form.settings.3.info=§7How long until auctions end.§r
+thm_ecp.form.settings.4.info=§7If you want to prevent the Wandering Buyer from spawning to control your own economy.§r
+thm_ecp.form.settings.5.info=§7Display money scoreboard on the side.§r
+thm_ecp.form.settings.6.info=§7Display money scoreboard in the list (pause menu list).§r
+thm_ecp.form.settings.7.info=§7Display money scoreboard above players head.§r
+thm_ecp.form.settings.8.info=§7Give starting money to new players.§r
+thm_ecp.form.settings.9.info=§7Transfer scores from your old scoreboard to Economy+.§r
+thm_ecp.form.settings.10.info=§7The name of the old scoreboard.§r
+thm_ecp.form.settings.11.info=§7Use your own scoreboard instead of the Economy+ data saving. §cIt is recommended to use the Economy+ data saving as this is the safest way to store money without accidental deleting§r
+thm_ecp.form.settings.12.info=§7The name of your scoreboard that stores your economy currency§r
+thm_ecp.form.settings.13.info=§7Allow players to create/use their own personal auctions, or restrict auctions to Global Auction§r
+thm_ecp.form.settings.14.info=§7The maximum amount of cash that can be stored in a small safe§r
+thm_ecp.form.settings.15.info=§7The maximum amount of cash that can be stored in a large safe§r
+thm_ecp.form.settings.16.info=§7The type of economy you want to use, this will change how the economy works (Cash, Digital or Both)§r
+thm_ecp.form.settings.17.info=§7Allow players to choose to get paid with cash or card. This is for markets and auctions etc. Turning this off will set default payments to digital unless cash only Economy Type§r

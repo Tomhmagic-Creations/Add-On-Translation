@@ -1,0 +1,51 @@
+name: Validate Translation Keys
+
+on:
+  pull_request:
+
+jobs:
+  validate-keys:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Validate translation keys in modified files
+        run: |
+          # Get the list of modified .lang files
+          MODIFIED_FILES=$(git diff --name-only origin/main | grep '.lang' || true)
+
+          if [ -n "$MODIFIED_FILES" ]; then
+            echo "Validating keys in the following modified files:"
+            echo "$MODIFIED_FILES"
+            
+            for FILE in $MODIFIED_FILES; do
+              # Determine the directory of the modified file
+              SUBFOLDER=$(dirname "$FILE")
+              BASE_FILE="$SUBFOLDER/en_US.lang"
+
+              # Check if the base en_US.lang file exists
+              if [ ! -f "$BASE_FILE" ]; then
+                echo "Base file $BASE_FILE not found. Skipping validation for $FILE."
+                continue
+              fi
+
+              # Extract keys from the base en_US.lang file
+              BASE_KEYS=$(grep -o '^[^=]*' "$BASE_FILE" | sort -u)
+
+              # Extract keys from the modified file
+              MODIFIED_KEYS=$(grep -o '^[^=]*' "$FILE" | sort -u)
+
+              # Find keys in the modified file that are not in the base file
+              NEW_KEYS=$(comm -23 <(echo "$MODIFIED_KEYS") <(echo "$BASE_KEYS"))
+
+              if [ -n "$NEW_KEYS" ]; then
+                echo "The following new keys in $FILE do not exist in $BASE_FILE:"
+                echo "$NEW_KEYS"
+                echo "Please ensure all keys match the base en_US.lang file in the same subfolder."
+                exit 1
+              fi
+            done
+          else
+            echo "No .lang files modified."
+          fi

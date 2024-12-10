@@ -1,0 +1,8 @@
+item.thm_ecp:atm_card_grey=ATM Card Grey
+
+thm_ecp.form.manage_market.market_colour=Change Market Colours
+thm_ecp.form.manage_market.colour1=Colour 1
+thm_ecp.form.manage_market.colour2=Colour 2
+thm_ecp.form.manage_market.colours_changed=Set market colours to %s and %s
+
+thm_ecp.form.button.market_colour=Market Colours
